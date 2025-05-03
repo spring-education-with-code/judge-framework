@@ -1,8 +1,8 @@
 package org.example.judgeframework.process;
 
+import org.example.judgeframework.filters.Filter;
 import org.example.judgeframework.filters_configurer.CheckDuplicateFilterConfigurer;
 import org.example.judgeframework.filters_configurer.FilterConfigurer;
-import org.example.judgeframework.filters.Filter;
 import org.example.judgeframework.filters_configurer.SendRabbitMQFilterConfigurer;
 import org.example.judgeframework.filters_configurer.SpringJudgeFilterConfigurer;
 

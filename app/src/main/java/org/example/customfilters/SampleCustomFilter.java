@@ -1,4 +1,4 @@
-package org.example.filters;
+package org.example.customfilters;
 
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 
@@ -8,7 +8,7 @@ public class SampleCustomFilter {
     public void sample(){
         MakeOneJudgeProcess makeOneJudgeProcess = new MakeOneJudgeProcess();
 
-        makeOneJudgeProcess.checkDuplicate();
+        //makeOneJudgeProcess.checkDuplicate();
     }
 }
 
