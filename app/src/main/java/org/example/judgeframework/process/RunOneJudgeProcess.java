@@ -1,7 +1,7 @@
-package org.judgeframework.process;
+package org.example.judgeframework.process;
 
-import org.judgeframework.dto.RequestDTO;
-import org.judgeframework.filters.Filter;
+import org.example.judgeframework.dto.RequestDTO;
+import org.example.judgeframework.filters.Filter;
 
 import java.util.List;
 

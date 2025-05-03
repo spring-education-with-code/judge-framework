@@ -1,4 +1,4 @@
-package org.judgeframework.dto;
+package org.example.judgeframework.dto;
 
 import java.util.Map;
 

@@ -1,11 +1,15 @@
 package org.example.filters;
 
-import java.io.IOException;
-import java.util.List;
+import org.example.judgeframework.process.MakeOneJudgeProcess;
+
 
 public class SampleCustomFilter {
 
+    public void sample(){
+        MakeOneJudgeProcess makeOneJudgeProcess = new MakeOneJudgeProcess();
 
+        makeOneJudgeProcess.checkDuplicate();
+    }
 }
 
 

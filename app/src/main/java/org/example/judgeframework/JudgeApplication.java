@@ -1,4 +1,4 @@
-package org.judgeframework;
+package org.example.judgeframework;
 
 public class JudgeApplication {
 

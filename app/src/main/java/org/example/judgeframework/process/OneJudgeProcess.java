@@ -1,6 +1,6 @@
-package org.judgeframework.process;
+package org.example.judgeframework.process;
 
-import org.judgeframework.filters.Filter;
+import org.example.judgeframework.filters.Filter;
 
 import java.util.List;
 

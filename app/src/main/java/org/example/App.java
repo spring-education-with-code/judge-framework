@@ -3,7 +3,7 @@
  */
 package org.example;
 
-import org.judgeframework.JudgeApplication;
+import org.example.judgeframework.JudgeApplication;
 
 public class App {
     public String getGreeting() {
