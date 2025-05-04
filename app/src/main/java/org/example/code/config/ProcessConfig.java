@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example.code.config;
 
 import org.example.annotation.OneProcess;
 import org.example.annotation.Process;

@@ -3,13 +3,14 @@ package org.example.judgeframework.proxy;
 import com.rabbitmq.client.DeliverCallback;
 import org.example.judgeframework.process.OneJudgeProcess;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //최초 진입점.
 //RabbitMQ 메세지를 받아서 어떤 채점 process 한테 넘길 지를 결정한다.
 public class ProcessChainProxy {
 
-    private List<OneJudgeProcess> judgeProcesses;
+    public List<OneJudgeProcess> judgeProcesses = new ArrayList<>();
 
     public DeliverCallback createDeliverCallback(){
         return (consumerTag, delivery) -> {

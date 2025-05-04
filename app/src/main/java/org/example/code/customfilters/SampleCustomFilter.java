@@ -1,4 +1,4 @@
-package org.example.customfilters;
+package org.example.code.customfilters;
 
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 
