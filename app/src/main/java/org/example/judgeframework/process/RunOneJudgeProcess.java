@@ -7,11 +7,16 @@ import java.util.List;
 
 //하나의 filter를 진행 시키는 클래스
 //spring security 의 VirtualFilterChain 역할
-public class RunOneJudgeProcess {
+public class RunOneJudgeProcess{
 
-    private int index;
+    public int index;
 
-    private List<Filter> filters;
+    public List<Filter> filters;
+
+    public RunOneJudgeProcess(OneJudgeProcess oneJudgeProcess){
+        this.filters = oneJudgeProcess.filters;
+        index = 0;
+    }
 
     public void doFilter(RequestDTO requestDTO){
         if(filters.size() <= index) return;

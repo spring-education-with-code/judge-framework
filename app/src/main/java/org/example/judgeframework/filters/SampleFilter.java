@@ -7,7 +7,7 @@ import org.example.judgeframework.process.RunOneJudgeProcess;
 public class SampleFilter extends IntraProcessFilter{
 
     @Override
-    public void doFilterInternal() {
+    public void doFilterInternal(RequestDTO requestDTO, RunOneJudgeProcess filterChain) {
 
     }
 }

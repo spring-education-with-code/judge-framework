@@ -6,6 +6,9 @@ import org.example.judgeframework.process.RunOneJudgeProcess;
 public abstract class IntraProcessFilter implements Filter{
     @Override
     public void doFilter(RequestDTO requestDTO, RunOneJudgeProcess filterChain) {
-
+        doFilterInternal(requestDTO, filterChain);
+        filterChain.doFilter(requestDTO);
     }
+
+    public abstract void doFilterInternal(RequestDTO requestDTO, RunOneJudgeProcess filterChain);
 }
