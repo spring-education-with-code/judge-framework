@@ -10,5 +10,5 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args){ JudgeApplication.run(); }
+    public static void main(String[] args){ JudgeApplication.run(App.class); }
 }

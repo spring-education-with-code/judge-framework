@@ -35,6 +35,7 @@ dependencies {
     implementation 'io.lettuce:lettuce-core:6.3.2.RELEASE'
     implementation 'org.junit.platform:junit-platform-launcher:1.11.4'
     implementation 'org.gradle:gradle-tooling-api:7.3-20210825160000+0000'
+    implementation("io.github.classgraph:classgraph:4.8.179")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

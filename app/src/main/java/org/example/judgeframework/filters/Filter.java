@@ -6,5 +6,4 @@ import org.example.judgeframework.process.RunOneJudgeProcess;
 public interface Filter {
     void doFilter(RequestDTO requestDTO, RunOneJudgeProcess filterChain);
 
-    void doFilterInternal();
 }

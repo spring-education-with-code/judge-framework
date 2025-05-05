@@ -8,6 +8,10 @@ import java.util.List;
 //spring security DefaultSecurityFilterChain 역할.
 public class OneJudgeProcess {
 
-    private List<Filter> filters;
+    public List<Filter> filters;
+
+    OneJudgeProcess(List<Filter> filters){
+        this.filters = filters;
+    }
 
 }
