@@ -1,6 +1,6 @@
 package org.example.judgeframework.process;
 
-import org.example.code.customfilters_configurer.SampleConfigurer;
+import org.example.judgeframework.filters_configurer.SampleConfigurer;
 import org.example.judgeframework.filters.Filter;
 import org.example.judgeframework.filters_configurer.*;
 
@@ -27,13 +27,23 @@ public class MakeOneJudgeProcess {
         return MakeOneJudgeProcess.this;
     }
 
+    public MakeOneJudgeProcess updateSpringContent(UpdateSpringContentFilterConfigurer updateSpringContentFilterConfigurer){
+        addConfigurer(updateSpringContentFilterConfigurer);
+        return MakeOneJudgeProcess.this;
+    }
+
     public MakeOneJudgeProcess springJudge(SpringJudgeFilterConfigurer springJudgeFilterConfigurer){
         addConfigurer(springJudgeFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
 
-    public MakeOneJudgeProcess sendRabbitMQMessage(SendRabbitMQFilterConfigurer sendRabbitMQFilterConfigurer){
-        addConfigurer(sendRabbitMQFilterConfigurer);
+    public MakeOneJudgeProcess updateMySqlFilter(UpdateMySqlFilterConfigurer updateMySqlFilterConfigurer){
+        addConfigurer(updateMySqlFilterConfigurer);
+        return MakeOneJudgeProcess.this;
+    }
+
+    public MakeOneJudgeProcess updateRedisFilter(UpdateRedisFilterConfigurer updateRedisFilterConfigurer){
+        addConfigurer(updateRedisFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
     /*

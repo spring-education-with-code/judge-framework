@@ -1,7 +1,6 @@
-package org.example.code.customfilters_configurer;
+package org.example.judgeframework.filters_configurer;
 
-import org.example.code.customfilters.SampleCustomFilter;
-import org.example.judgeframework.filters_configurer.FilterConfigurer;
+import org.example.judgeframework.filters.SampleFilter;
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 
 public class SampleConfigurer implements FilterConfigurer {
@@ -10,7 +9,7 @@ public class SampleConfigurer implements FilterConfigurer {
 
     @Override
     public void configure(MakeOneJudgeProcess makeOneJudgeProcess){
-        SampleCustomFilter sampleCustomFilter = new SampleCustomFilter(temp);
+        SampleFilter sampleCustomFilter = new SampleFilter(temp);
         makeOneJudgeProcess.addFilter(sampleCustomFilter);
     }
 
