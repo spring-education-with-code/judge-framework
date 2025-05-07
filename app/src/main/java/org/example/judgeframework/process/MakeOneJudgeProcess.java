@@ -1,6 +1,6 @@
 package org.example.judgeframework.process;
 
-import org.example.code.customfilters_configurer.SampleConfigurer;
+import org.example.judgeframework.filters_configurer.SampleConfigurer;
 import org.example.judgeframework.filters.Filter;
 import org.example.judgeframework.filters_configurer.*;
 
@@ -24,6 +24,11 @@ public class MakeOneJudgeProcess {
 
     public MakeOneJudgeProcess sample(SampleConfigurer sampleConfigurer){
         addConfigurer(sampleConfigurer);
+        return MakeOneJudgeProcess.this;
+    }
+
+    public MakeOneJudgeProcess updateSpringContent(UpdateSpringContentFilterConfigurer updateSpringContentFilterConfigurer){
+        addConfigurer(updateSpringContentFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
 

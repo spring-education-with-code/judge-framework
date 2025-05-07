@@ -4,6 +4,7 @@ import org.example.judgeframework.dto.RequestDTO;
 import org.example.judgeframework.filters.Filter;
 
 import java.util.List;
+import java.util.Map;
 
 //하나의 filter를 진행 시키는 클래스
 //spring security 의 VirtualFilterChain 역할
@@ -18,7 +19,7 @@ public class RunOneJudgeProcess{
         index = 0;
     }
 
-    public void doFilter(RequestDTO requestDTO){
+    public void doFilter(Map<String, String> requestDTO){
         if(filters.size() <= index) return;
 
         Filter filter = filters.get(index++);
