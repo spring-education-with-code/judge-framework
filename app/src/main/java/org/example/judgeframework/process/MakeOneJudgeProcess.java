@@ -36,6 +36,16 @@ public class MakeOneJudgeProcess {
         addConfigurer(springJudgeFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
+
+    public MakeOneJudgeProcess updateMySqlFilter(UpdateMySqlFilterConfigurer updateMySqlFilterConfigurer){
+        addConfigurer(updateMySqlFilterConfigurer);
+        return MakeOneJudgeProcess.this;
+    }
+
+    public MakeOneJudgeProcess updateRedisFilter(UpdateRedisFilterConfigurer updateRedisFilterConfigurer){
+        addConfigurer(updateRedisFilterConfigurer);
+        return MakeOneJudgeProcess.this;
+    }
     /*
     //Spring Security 예시 ... (cors)
 
