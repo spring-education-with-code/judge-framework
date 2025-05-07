@@ -1,6 +1,8 @@
 package org.example.judgeframework.filters_configurer;
 
 import org.example.judgeframework.filters.Filter;
+import org.example.judgeframework.filters.SpringJudgeFilter;
+import org.example.judgeframework.filters.UpdateSpringContentFilter;
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 
 public class SpringJudgeFilterConfigurer implements FilterConfigurer{
@@ -14,5 +16,7 @@ public class SpringJudgeFilterConfigurer implements FilterConfigurer{
     //configure 가 list filters 를 채우는 과정임.
     @Override
     public void configure(MakeOneJudgeProcess makeOneJudgeProcess) {
+        SpringJudgeFilter springJudgeFilter = new SpringJudgeFilter();
+        makeOneJudgeProcess.addFilter(springJudgeFilter);
     }
 }

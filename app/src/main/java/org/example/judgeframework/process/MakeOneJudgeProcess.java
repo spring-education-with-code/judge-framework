@@ -36,11 +36,6 @@ public class MakeOneJudgeProcess {
         addConfigurer(springJudgeFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
-
-    public MakeOneJudgeProcess sendRabbitMQMessage(SendRabbitMQFilterConfigurer sendRabbitMQFilterConfigurer){
-        addConfigurer(sendRabbitMQFilterConfigurer);
-        return MakeOneJudgeProcess.this;
-    }
     /*
     //Spring Security 예시 ... (cors)
 

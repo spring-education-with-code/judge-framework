@@ -3,9 +3,12 @@ package org.example.code.config;
 import org.example.annotation.OneProcess;
 import org.example.annotation.Process;
 import org.example.judgeframework.filters_configurer.SampleConfigurer;
+import org.example.judgeframework.filters_configurer.SpringJudgeFilterConfigurer;
 import org.example.judgeframework.filters_configurer.UpdateSpringContentFilterConfigurer;
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 import org.example.judgeframework.process.OneJudgeProcess;
+
+import javax.swing.*;
 
 @Process
 public class ProcessConfig {
@@ -23,7 +26,8 @@ public class ProcessConfig {
          */
 
         makeOneJudgeProcess
-                .updateSpringContent(new UpdateSpringContentFilterConfigurer());
+                .updateSpringContent(new UpdateSpringContentFilterConfigurer())
+                .springJudge(new SpringJudgeFilterConfigurer());
 
 
 
