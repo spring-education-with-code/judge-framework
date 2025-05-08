@@ -46,6 +46,11 @@ public class MakeOneJudgeProcess {
         addConfigurer(updateRedisFilterConfigurer);
         return MakeOneJudgeProcess.this;
     }
+
+    public MakeOneJudgeProcess addCustomFilter(Filter filter){
+        addConfigurer(new CustomFilterConfigurer(filter));
+        return MakeOneJudgeProcess.this;
+    }
     /*
     //Spring Security 예시 ... (cors)
 

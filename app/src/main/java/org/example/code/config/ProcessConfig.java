@@ -2,6 +2,7 @@ package org.example.code.config;
 
 import org.example.annotation.OneProcess;
 import org.example.annotation.Process;
+import org.example.code.customfilters.CustomFilter;
 import org.example.judgeframework.filters_configurer.*;
 import org.example.judgeframework.process.MakeOneJudgeProcess;
 import org.example.judgeframework.process.OneJudgeProcess;
@@ -20,7 +21,8 @@ public class ProcessConfig {
                 .updateSpringContent(new UpdateSpringContentFilterConfigurer())
                 .springJudge(new SpringJudgeFilterConfigurer())
                 .updateMySqlFilter(new UpdateMySqlFilterConfigurer())
-                .updateRedisFilter(new UpdateRedisFilterConfigurer());
+                .updateRedisFilter(new UpdateRedisFilterConfigurer())
+                .addCustomFilter(new CustomFilter());
 
         return makeOneJudgeProcess.build();
     }
